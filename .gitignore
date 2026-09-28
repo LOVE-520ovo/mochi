@@ -64,3 +64,5 @@ diag-*.html
 tools/tmp-triage-cache/
 tools/tmp-triage-report.txt
 REAL-DEVICE-CHECK.md
+.vercel
+.env*
