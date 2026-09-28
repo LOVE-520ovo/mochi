@@ -1133,3 +1133,65 @@
 [data-theme="dark"] .modal.modal--warn .modal-title { color:#ff7a6b; }
 [data-theme="dark"] .modal.modal--warn .modal-static { background:rgba(232,56,44,.16); border-color:rgba(255,122,107,.5); }
 [data-theme="dark"] .modal.modal--warn .modal-static .modal-static-key { color:#ff8a7a; }
+
+/* ===== 【黑教堂】聊天皮肤（mochi 适配版 · 深色模式生效） =====
+   风格来源：小红书 @你闻起来像小猫《糯叽机全局美化【黑教堂】》，
+   为 mochi（自用部署）重写适配，自改自用。
+   提示：半透明质感需搭配深色聊天壁纸效果最佳。 */
+/* 顶栏：透明 + 银线 */
+[data-theme="dark"] #page-chat > .chat-head {
+  background: transparent;
+  border-bottom: 1px solid rgba(192,192,192,.4);
+  box-shadow: none;
+}
+/* 顶栏按钮：透明细边悬空 */
+[data-theme="dark"] #page-chat .ch-back,
+[data-theme="dark"] #page-chat .ch-settings {
+  background: transparent;
+  border: 1px solid rgba(192,192,192,.4);
+  box-shadow: none;
+}
+[data-theme="dark"] #page-chat .ch-back svg,
+[data-theme="dark"] #page-chat .ch-settings svg { color: rgba(220,224,232,.9); }
+/* 昵称：衬线 + 微光 */
+[data-theme="dark"] #page-chat .ch-name {
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: 2px;
+  text-shadow: 0 0 12px rgba(255,255,255,.35);
+}
+/* 输入栏：暗玻璃 + 银边直角 */
+[data-theme="dark"] #page-chat > .chat-input-row {
+  background: rgba(0,0,0,.35);
+  border: 1px solid rgba(192,192,192,.4);
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-backdrop-filter: blur(8px) saturate(100%);
+  backdrop-filter: blur(8px) saturate(100%);
+}
+[data-theme="dark"] #page-chat .chat-input { color: #fff; caret-color: rgba(220,224,232,.9); }
+[data-theme="dark"] #page-chat .chat-send {
+  background: rgba(220,224,232,.7);
+  color: #000;
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 0 8px rgba(220,224,232,.3);
+}
+/* 气泡：暗玻璃 + 银白细边 + 直角 + 微光 */
+[data-theme="dark"] #page-chat .msg-bubble {
+  border-radius: 0;
+  color: #fff;
+  -webkit-backdrop-filter: blur(4px) saturate(120%);
+  backdrop-filter: blur(4px) saturate(120%);
+}
+[data-theme="dark"] #page-chat .msg-in .msg-bubble {
+  background: rgba(10,10,12,.25);
+  border: 1px solid rgba(192,192,192,.4);
+  box-shadow: 0 0 10px rgba(0,0,0,.4), inset 0 0 4px rgba(255,255,255,.1);
+}
+[data-theme="dark"] #page-chat .msg-out .msg-bubble {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(220,224,232,.5);
+  box-shadow: 0 0 8px rgba(255,255,255,.05), inset 0 0 4px rgba(255,255,255,.15);
+}
+/* 时间戳：冷银白 */
+[data-theme="dark"] #page-chat .msg-time { color: rgba(220,224,232,.5); }
